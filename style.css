@@ -1,50 +1,62 @@
-/* Reset básico */
-body {
+/* 🔄 Reset básico */
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
   font-family: Arial, sans-serif;
   background-color: #f0f2f5;
   color: #333;
 }
 
-/* Encabezado */
+/* 🧢 Encabezado */
 header {
   text-align: center;
   padding: 30px 0;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-  margin: 0;
   font-size: 28px;
 }
 
-/* Imagen de perfil */
+/* 🖼️ Imagen de perfil */
 .ed {
   display: block;
   margin: 20px auto;
-  border-radius: 50%;
   width: 200px;
   height: 200px;
+  border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Sección de botones de contacto */
-.contact-buttons {
+/* 📎 Sección de presentación */
+.presentacion {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+/* 📲 Botones de contacto */
+.contact-buttons {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 15px;
   margin: 30px 0;
 }
 
-/* Botones generales */
+/* 🎯 Botones generales */
 button {
   padding: 10px 20px;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
@@ -53,62 +65,31 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Botón Instagram */
+/* 🎨 Estilos específicos de botones */
 .ig {
   background-color: #E1306C;
-  color: white;
+  color: #fff;
 }
 
-/* Botón GitHub */
-.git {
+.git,
+.ws {
   background-color: #333;
-  color: white;
+  color: #fff;
 }
 
-/* WhatsApp imagen */
-/* WhatsApp botón como los demás */
-.ws-button {
-  text-decoration: none;
-  background-color: #25D366;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+.gray {
+  color: #ccc;
 }
 
-.ws-button:hover {
-  transform: scale(1.05);
-}
-
-/* Contenido interno del botón */
-.ws-content {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* Ícono de WhatsApp */
-.ws-icon {
-  width: 24px;
-  height: 24px;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-/* Número de teléfono */
+/* 📞 WhatsApp contenido interno */
 .Tel {
   font-size: 16px;
-  margin: 0;
 }
 
-/* Pie de página */
+/* 📥 Pie de página */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+  background-color: #fff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
